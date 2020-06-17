@@ -1,0 +1,28 @@
+{
+  "name": "employee-appraisal-and-management",
+  "version": "1.0.0",
+  "description": "",
+  "main": "config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himasajeev/employee-appraisal-and-management.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/himasajeev/employee-appraisal-and-management/issues"
+  },
+  "homepage": "https://github.com/himasajeev/employee-appraisal-and-management#readme",
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.2.1",
+    "mongoose": "^5.1.2",
+    "nodemon": "^1.17.5"
+  }
+}
