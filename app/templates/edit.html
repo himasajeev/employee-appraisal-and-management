@@ -1,0 +1,63 @@
+<div class="card-content table-responsive" ng-init="showEmployee(); getDepartments(); getPositions();">
+  <div class="col-md-12">
+    <div class="card">
+      <div class="card-header" data-background-color="blue">
+        <h4 class="title">Add Performance(0-10)</h4>
+      </div>
+      <div class="card-content">
+        <form>
+          <div class="form-group">
+            <label for="name">Customer Focus:</label>
+            <input type="text" class="form-control" id="name" ng-model="employee.customerFocus" value="employee.customerFocus">
+          </div>
+          <div class="form-group">
+            <label for="name">Leadership:</label>
+            <input type="text" class="form-control" id="name" ng-model="employee.Leadership" value="employee.Leadership">
+          </div>
+            <div class="form-group">
+              <label for="name">Engagement:</label>
+              <input type="text" class="form-control" id="name" ng-model="employee.Engagement" value="employee.Engagement">
+            </div>
+            <div class="form-group">
+              <label for="name">Process Approach:</label>
+              <input type="text" class="form-control" id="name" ng-model="employee.ProcessApproach" value="employee.ProcessApproach">
+            </div>
+            <div class="form-group">
+              <label for="name">Process Improvement:</label>
+              <input type="text" class="form-control" id="name" ng-model="employee.Improvement" value="employee.Improvement">
+            </div>
+
+              <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" ng-model="employee.name" value="employee.name">
+          </div>
+          <div class="form-group">
+            <label for="dept">Department:</label>
+            <select id="departmentSelector" ng-model="employee.dept">
+              <option ng-repeat="x in departments">{{x.name}}</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="area">Location:</label>
+            <input type="text" class="form-control" id="area" ng-model="employee.area" value="employee.area">
+          </div>
+          <div class="form-group">
+            <label for="contact">Contact No. :</label>
+            <input type="text" class="form-control" id="contact" ng-model="employee.contact" value="employee.contact">
+                <div class="form-group">
+                  <label for="dept">Job Status:</label>
+                  <select id="departmentSelector" ng-model="employee.status" required>
+                    <option ng-repeat="x in positions">{{x.name}}</option>
+                  </select>
+                </div>
+              <div class="form-group">
+                <label for="salary">Salary :</label>
+                <input type="text" class="form-control" id="salary" ng-model="employee.salary" value="employee.salary">
+              </div>
+              <button type="submit" class="btn btn-success" ng-click="updateEmployee()">Update</button>
+              <a href="#!/dashboard" class="btn btn-danger"> Cancel</a>
+        </form>
+        </div>
+        </div>
+      </div>
+    </div>
